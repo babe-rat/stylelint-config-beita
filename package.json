@@ -1,0 +1,32 @@
+{
+  "name": "stylelint-config-beita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:less": "stylelint test/less/**/*.less --syntax less",
+    "less:fix": "stylelint test/less/**/*.less --syntax less --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babe-rat/stylelint-config-beita.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babe-rat/stylelint-config-beita/issues"
+  },
+  "homepage": "https://github.com/babe-rat/stylelint-config-beita#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^27.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0"
+  }
+}

@@ -1,1 +1,1 @@
-# stylelint-config-beita-
+# stylelint-config-beita
