@@ -1,10 +1,11 @@
-const extensions = ['.less']
+const extensions = ['.scss']
 
 module.exports = {
     overrides: [
         {
             files: extensions.flatMap(ext => [`*${ext}`, `**/*${ext}`]),
-            customSyntax: 'postcss-less',
+            extends: 'stylelint-config-standard-scss',
+            customSyntax: 'postcss-scss',
         },
     ],
 }

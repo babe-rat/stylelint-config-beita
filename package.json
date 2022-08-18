@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "files": ["index.js", "less.js", "scss.js", "vue.js"],
   "scripts": {
-    "lint:less": "stylelint test/less/**/*.less --syntax less",
+    "lint": "pnpm lint:css && pnpm lint:less && pnpm lint:scss && pnpm lint:vue",
+    "lint:css": "stylelint test/css/**/*.css",
+    "lint:less": "stylelint test/less/**/*.less",
+    "lint:scss": "stylelint test/scss/**/*.scss",
+    "lint:vue": "stylelint test/sfc-style/**/*.vue",
     "less:fix": "stylelint test/less/**/*.less --syntax less --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/babe-rat/stylelint-config-beita.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "stylelint"
+  ],
+  "author": "yemu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/babe-rat/stylelint-config-beita/issues"
@@ -22,10 +29,14 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
+    "postcss": "8.4.14",
+    "postcss-html": "1.4.1",
     "stylelint": "^14.10.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard": "^27.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-order": "^5.0.0"
   }
