@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-beita",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "files": ["index.js", "less.js", "scss.js", "vue.js"],
@@ -25,6 +25,10 @@
     "url": "https://github.com/babe-rat/stylelint-config-beita/issues"
   },
   "homepage": "https://github.com/babe-rat/stylelint-config-beita#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "devDependencies": {
     "prettier": "^2.7.1"
   },
